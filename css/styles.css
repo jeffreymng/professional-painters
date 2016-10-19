@@ -1,0 +1,35 @@
+.red {
+  color: #C60B35;
+}
+
+.blue {
+  color: #135087;
+}
+
+.lighter-blue {
+  color: #809CB2;
+}
+
+.center {
+  margin: 0 auto;
+}
+
+.no-margin-top {
+  margin-top: 0;
+}
+
+.no-margin-bottom {
+  margin-bottom: 0;
+}
+
+.no-padding-top {
+  padding-top: 0;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0;
+}
+
+.black {
+  background-color: black;
+}
