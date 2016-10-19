@@ -8,11 +8,11 @@
 </head>
 <body>
   <div class='container-fluid center'>
-    <div style='text-align: center;' class='col-xs-6'>
+    <div class='col-xs-6 center-text'>
       <h3 class='no-margin-bottom'><span class=red>PRO</span><span class='blue'>FESSIONAL</span></h3>
       <h1 class='blue no-margin-top'>PAINTERS</h1>
     </div>
-    <div style='text-align: center;' class='col-xs-6'>
+    <div class='col-xs-6 center-text'>
       <h3><span class='blue'>CALL <span class='red'>555-123-4567</span></h3>
     </div>
   </div>
