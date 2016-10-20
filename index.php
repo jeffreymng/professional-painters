@@ -1,3 +1,31 @@
+<?php
+  $name_error = $email_error = $phone_error = "";
+  if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if (empty($_POST["name"])) {
+      $name_error = "Please enter your name";
+    } else {
+      $name = $_POST["name"];
+    }
+
+    if (empty($_POST["email"]))  {
+      $email_error = "Please enter your email";
+    } elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
+      $email_error = "Invalid email";
+    } else {
+      $email = $_POST["email"];
+    }
+
+    if (empty($_POST["phone"]))  {
+      $phone_error = "Please enter your phone number";
+    } elseif (!preg_match("/^\d{10}$/", $_POST["phone"])) {
+      $phone_error = "Invalid phone. Please enter 10 numbers";
+    } else {
+      $phone = $_POST["phone"];
+    }
+  }
+?>
+
+
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/header.php' ?>
 
@@ -16,18 +44,18 @@
     <form method='post' action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" class='form-horizontal'>
       <div class='form-group'>
         <label for='name'>NAME</label>
-        <input type='text' class='' id='name'>
+        <input type='text' name='name' class='' id='name' placeholder="<?php echo $name_error ?>">
       </div>
       <div class='form-group'>
         <label for='email'>EMAIL</label>
-        <input type='email' class='' id='email'>
+        <input type='email' name='email' class='' id='email' placeholder="<?php echo $email_error ?>">
       </div>
       <div class='form-group'>
         <label for='phone'>PHONE</label>
-        <input type='number' class='' id='phone'>
+        <input type='text' name='phone' class='' id='phone' maxlength='10' placeholder="<?php echo $phone_error ?>">
       </div>
       <div class='form-group'>
-        <button type='submit' class='btn'>SAVE $150</button>
+        <input type='submit' name='submit' class='btn submit' value='SAVE $150'>
       </div>
     </form>
     <div class='bottom-central white'>
