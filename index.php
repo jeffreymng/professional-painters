@@ -23,7 +23,7 @@
       $phone = $_POST["phone"];
     }
 
-    if ($name && $email && $phone) {
+    if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["phone"])) {
       $message_to_customer = "Hello $name, \nThank you very much for your interest in Professional Painters. We will be in contact with you shortly either by phone or email. Have a nice day!";
       $message_to_customer = wordwrap($message_to_customer, 70, "\r\n");
       $subject_to_customer = "Professional Painters";
