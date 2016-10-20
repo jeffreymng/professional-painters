@@ -22,13 +22,20 @@
     } else {
       $phone = $_POST["phone"];
     }
+
+    if ($name && $email && $phone) {
+      $message_to_customer = "Hello $name, \nThank you very much for your interest in Professional Painters. We will be in contact with you shortly either by phone or email. Have a nice day!";
+      $message_to_customer = wordwrap($message_to_customer, 70, "\r\n");
+      $subject_to_customer = "Professional Painters";
+      mail($email, $subject_to_customer, $message_to_customer);
+      $message_to_website_owner = "Hello, Professional Painters, \n You have a potentional new client. \nName: $name \nEmail: $email \nPhone: $phone";
+      $message_to_website_owner = wordwrap($message_to_website_owner, 70, "\r\n");
+      mail("webmaster@professionalpainters.com", "New Customer", $message_to_website_owner);
+    }
   }
 ?>
 
-
-
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/header.php' ?>
-
 <div class='container-fluid' id='central-image'>
   <div class='central center-text'>
     <h1><span class='red'>PROFESSIONAL</span> <span class='blue'>PAINTERS</span></h1>
