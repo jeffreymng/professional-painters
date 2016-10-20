@@ -1,8 +1,7 @@
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/header.php' ?>
 
-<div class='container-fluid' id='top-red'>
-  <img src='/img/house.jpg' alt='house'>
+<div class='container-fluid' id='central-image'>
   <div class='central center-text'>
     <h1><span class='red'>PROFESSIONAL</span> <span class='blue'>PAINTERS</span></h1>
     <h2 class='blue'>OF LARGO, CLEARWATER, TAMPA</h2>
@@ -31,12 +30,18 @@
         <button type='submit' class='btn'>SAVE $150</button>
       </div>
     </form>
+    <div class='bottom-central white'>
+      <h4><span class='glyphicon glyphicon-ok-sign'></span>Quality Work &nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span>Professional Painters &nbsp;&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span>Flexible Schedules</h4>
+    </div>
+    &nbsp;
   </div>
 </div>
 
-
+<!-- 
 <div class='container-fluid'>
-  
-</div>
+  <div class='col-xs-8'>
+    <h1><span class='red'>Professional Painters</span></h1>
+  </div>
+</div> -->
 
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/footer.php' ?>
