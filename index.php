@@ -10,7 +10,7 @@
     <div class='transparent-red white'>
       <h4>SCHEDULE YOUR FREE ESTIMATE</h4>
       <h4>TO REDEEM PROMO CODE FOR</h4>
-      <h1>$150 OFF</h1>
+      <h1 class='large'>$150 OFF</h1>
       <h5>ANY JOB OF $3000 OR MORE</h5>
     </div>
     <form method='post' action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" class='form-horizontal'>
@@ -45,24 +45,24 @@
     <h3 class='blue'>Tackling Residential & Commercial Painting Projects</h3>
     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus gravida massa pharetra, tempor ligula ut, aliquet nulla. Quisque eu quam turpis. Sed porttitor mauris nec quam dignissim, et placerat odio scelerisque. In hac habitasse platea dictumst. Proin et accumsan nunc, sit amet bibendum purus. Proin at euismod ante. Phasellus ipsum orci, feugiat tristique mollis vitae, sagittis sollicitudin libero. In tempus ex non ipsum pretium, ac consequat justo fringilla.</p>
     <h3 class='blue'>Why Clients Choose to Hire Our Team:</h3>
-    <ul class='red'>
+    <ul class='red list-unstyled'>
       <li>
-        Mauris sit amet urna et leo pulvinar tristique.
+        <span aria-hidden="true" data-icon="&#xe001;" class="icon-glyphicon-paintbrush blue"></span>  Mauris sit amet urna et leo pulvinar tristique.
       </li>
       <li>
-        Nam eu eros mollis, interdum sapien tincidunt accumsan erat.
+        <span aria-hidden="true" data-icon="&#xe001;" class="icon-glyphicon-paintbrush blue"></span>  Nam eu eros mollis, interdum sapien tincidunt accumsan erat.
       </li>
       <li>
-        Maecenas rutrum libero ac diam volutpat, eu vehicula risus molestie.
+        <span aria-hidden="true" data-icon="&#xe001;" class="icon-glyphicon-paintbrush blue"></span>  Maecenas rutrum libero ac diam volutpat, eu vehicula risus molestie.
       </li>
       <li>
-        Mauris at tellus in lacus efficitur fringilla.
+        <span aria-hidden="true" data-icon="&#xe001;" class="icon-glyphicon-paintbrush blue"></span>  Mauris at tellus in lacus efficitur fringilla.
       </li>
       <li>
-        Nullam lacinia nulla eget quam ornare blandit.
+        <span aria-hidden="true" data-icon="&#xe001;" class="icon-glyphicon-paintbrush blue"></span>  Nullam lacinia nulla eget quam ornare blandit.
       </li>
       <li>
-        Sed mollis magna eu mi aliquet scelerisque.
+        <span aria-hidden="true" data-icon="&#xe001;" class="icon-glyphicon-paintbrush blue"></span>  Sed mollis magna eu mi aliquet scelerisque.
       </li>
     </ul>
     <p>Donec aliquam sit amet nisi sed consequat. Etiam non gravida nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Aenean feugiat lacinia velit non lacinia. Proin eget tristique leo.</p>

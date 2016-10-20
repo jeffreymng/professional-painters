@@ -1,0 +1,68 @@
+{
+  "IcoMoonType": "selection",
+  "icons": [
+    {
+      "icon": {
+        "paths": [
+          "M1298.863 64.674c-8.084 5.389-33.684 47.158-57.937 92.968-51.2 103.747-114.526 177.853-172.463 200.758-82.189 35.032-204.8 24.253-357.053-30.989-121.263-44.463-153.6-49.853-260.042-49.853-145.516 0-235.789 26.947-313.937 92.968-168.421 144.168-56.589 339.537 218.274 384 114.526 17.516 196.716 6.737 363.789-49.853 148.211-48.505 272.168-57.937 348.968-25.6 57.937 22.905 121.263 97.011 172.463 200.758 24.253 45.811 49.853 87.579 57.937 92.968s137.432 10.779 288.337 10.779h272.168v-929.684h-272.168c-150.905 0-280.253 5.389-288.337 10.779zM517.389 459.453c74.105 57.937 14.821 133.389-105.095 133.389-86.232 0-129.347-26.947-129.347-80.842s43.116-80.842 129.347-80.842c49.853 0 79.495 8.084 105.095 28.295z"
+        ],
+        "attrs": [
+          {}
+        ],
+        "width": 1900,
+        "isMulticolor": false,
+        "isMulticolor2": false,
+        "grid": 0,
+        "tags": [
+          "frontend_developer-LPtest"
+        ]
+      },
+      "attrs": [
+        {}
+      ],
+      "properties": {
+        "order": 3,
+        "id": 0,
+        "name": "glyphicon-paintbrush",
+        "prevSize": 32,
+        "code": 59648
+      },
+      "setIdx": 0,
+      "setId": 2,
+      "iconIdx": 0
+    }
+  ],
+  "height": 1024,
+  "metadata": {
+    "name": "icomoon"
+  },
+  "preferences": {
+    "showGlyphs": true,
+    "showQuickUse": true,
+    "showQuickUse2": true,
+    "showSVGs": true,
+    "fontPref": {
+      "prefix": "icon-",
+      "metadata": {
+        "fontFamily": "icomoon"
+      },
+      "metrics": {
+        "emSize": 1024,
+        "baseline": 6.25,
+        "whitespace": 50
+      },
+      "embed": false
+    },
+    "imagePref": {
+      "prefix": "icon-",
+      "png": true,
+      "useClassSelector": true,
+      "color": 0,
+      "bgColor": 16777215,
+      "classSelector": ".icon"
+    },
+    "historySize": 100,
+    "showCodes": true,
+    "gridSize": 16
+  }
+}
