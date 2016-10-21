@@ -1,41 +1,3 @@
-<?php
-  $name_error = $email_error = $phone_error = "";
-  if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    if (empty($_POST["name"])) {
-      $name_error = "Please enter your name";
-    } else {
-      $name = $_POST["name"];
-    }
-
-    if (empty($_POST["email"]))  {
-      $email_error = "Please enter your email";
-    } elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-      $email_error = "Invalid email";
-    } else {
-      $email = $_POST["email"];
-    }
-
-    if (empty($_POST["phone"]))  {
-      $phone_error = "Please enter your phone number";
-    } elseif (!preg_match("/^\d{10}$/", $_POST["phone"])) {
-      $phone_error = "Invalid phone. Please enter 10 numbers";
-    } else {
-      $phone = $_POST["phone"];
-    }
-
-    if (!empty($_POST["name"]) && !empty($_POST["email"]) && !empty($_POST["phone"])) {
-      $message_to_customer = "Hello $name, \nThank you very much for your interest in Professional Painters. We will be in contact with you shortly either by phone or email. Have a nice day!";
-      $message_to_customer = wordwrap($message_to_customer, 70, "\r\n");
-      $subject_to_customer = "Professional Painters";
-      mail($email, $subject_to_customer, $message_to_customer);
-      $message_to_website_owner = "Hello, Professional Painters, \n You have a potentional new client. \nName: $name \nEmail: $email \nPhone: $phone";
-      $message_to_website_owner = wordwrap($message_to_website_owner, 70, "\r\n");
-      mail("webmaster@professionalpainters.com", "New Customer", $message_to_website_owner);
-      header("Location: success.php");
-    }
-  }
-?>
-
 <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/inc/header.php' ?>
 
 <div class='container-fluid' id='central-image'>
@@ -50,23 +12,7 @@
       <h1 class='large'>$150 OFF</h1>
       <h5>ANY JOB OF $3000 OR MORE</h5>
     </div>
-    <form method='post' action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>" class='form-horizontal'>
-      <div class='form-group'>
-        <label for='name'>NAME</label>
-        <input type='text' name='name' class='' id='name' placeholder="<?php echo $name_error ?>">
-      </div>
-      <div class='form-group'>
-        <label for='email'>EMAIL</label>
-        <input type='email' name='email' class='' id='email' placeholder="<?php echo $email_error ?>">
-      </div>
-      <div class='form-group'>
-        <label for='phone'>PHONE</label>
-        <input type='text' name='phone' class='' id='phone' maxlength='10' placeholder="<?php echo $phone_error ?>">
-      </div>
-      <div class='form-group'>
-        <input type='submit' name='submit' class='btn submit' value='SAVE $150'>
-      </div>
-    </form>
+    <h3 class='red'>Thank you for your interest! A confirmation email has been sent to your email and we will be in contact with you shortly!</h3>
     <div class='bottom-central white'>
       <h4><span class='glyphicon glyphicon-ok-sign'></span> Quality Work &nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span> Professional Painters &nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span> Flexible Schedules</h4>
     </div>
