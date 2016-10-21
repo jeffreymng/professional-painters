@@ -120,6 +120,12 @@ input {
   padding: 1%;
 }
 
+@media all and (max-device-width: 480px) {
+  h4.responsive {
+    font-size: 50%;
+  }
+}
+
 .bottom-footer {
   background-color: #C60B35;
   border-bottom: solid 10px;

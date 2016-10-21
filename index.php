@@ -68,7 +68,9 @@
       </div>
     </form>
     <div class='bottom-central white'>
-      <h4><span class='glyphicon glyphicon-ok-sign'></span> Quality Work &nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span> Professional Painters &nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span> Flexible Schedules</h4>
+      <h4 class='responsive'>
+        <span class='glyphicon glyphicon-ok-sign'></span>&nbsp;Quality Work&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span>&nbsp;Professional Painters&nbsp;&nbsp;&nbsp;<span class='glyphicon glyphicon-ok-sign'></span>&nbsp;Flexible Schedules
+      </h4>
     </div>
     &nbsp;
   </div>
